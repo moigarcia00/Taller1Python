@@ -65,3 +65,25 @@ print(pieza_objeto["name"])
 
 # Colección principal (Lista de diccionarios)
 catalog = [pieza_objeto]
+
+
+
+
+#Punto 7
+
+# Aritméticos
+precio_con_iva = precio_numerico * 1.16
+precio_mitad = precio_numerico / 2
+
+# Comparación y Lógicos (Reglas de negocio)
+es_mayor_cero = precio_numerico > 0
+es_disponible = pieza_objeto["status"] == "disponible"
+
+# Regla de publicación (AND)
+puede_publicarse = es_mayor_cero and es_disponible
+
+# Regla de revisión (OR)
+requiere_revision = pieza_objeto["status"] == "reservada" or pieza_objeto["status"] == "vendida"
+
+# Regla de exclusión (NOT)
+no_esta_vendida = not (pieza_objeto["status"] == "vendida")
