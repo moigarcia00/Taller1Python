@@ -87,3 +87,16 @@ requiere_revision = pieza_objeto["status"] == "reservada" or pieza_objeto["statu
 
 # Regla de exclusión (NOT)
 no_esta_vendida = not (pieza_objeto["status"] == "vendida")
+
+
+
+
+#Punto 8
+
+# Estructuras if, elif, else para ramificar la lógica
+if pieza_objeto["status"] == "disponible":
+    print("La pieza se puede vender de inmediato.")
+elif pieza_objeto["status"] == "reservada":
+    print("La pieza está apartada temporalmente.")
+else:
+    print("La pieza ya fue adquirida por otro coleccionista.")
