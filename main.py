@@ -115,3 +115,26 @@ opcion = ""
 while opcion != "4":
     print("\n1. Ver piezas\n2. Ver disponibles\n3. Métricas\n4. Salir")
     opcion = input("Seleccione una opción: ")
+
+
+
+
+# Punto 10
+
+
+# Validación de precio mayor a cero y numérico mediante control de flujo manual
+precio_valido = False
+while not precio_valido:
+    entrada = input("Ingrese un precio válido (mayor a 0): ")
+
+    # Comprobar si el string es convertible a número decimal de forma básica
+    if entrada.replace('.', '', 1).isdigit():
+        valor_convertido = float(entrada)
+        if valor_convertido > 0:
+            precio_valido = True
+            print(f"Precio aceptado: {valor_convertido}")
+        else:
+            print("Error: El precio debe ser mayor a cero.")
+    else:
+        print("Error: Debe ingresar un valor puramente numérico.")
+
