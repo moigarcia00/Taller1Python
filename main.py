@@ -12,3 +12,6 @@ entrada_nombre = input("Ingrese el nombre de la pieza: ")
 entrada_precio = input("Ingrese el precio de la pieza: ")
 
 
+# Punto 3
+precio_numerico = float(entrada_precio)
+cantidad_numerica = int("5")
