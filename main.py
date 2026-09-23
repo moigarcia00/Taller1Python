@@ -7,3 +7,8 @@ disponible = True
 categorias_unicas = {"Arte", "Monedas"}
 
 
+# Punto 2
+entrada_nombre = input("Ingrese el nombre de la pieza: ")
+entrada_precio = input("Ingrese el precio de la pieza: ")
+
+
