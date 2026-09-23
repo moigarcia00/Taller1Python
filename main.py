@@ -100,3 +100,18 @@ elif pieza_objeto["status"] == "reservada":
     print("La pieza está apartada temporalmente.")
 else:
     print("La pieza ya fue adquirida por otro coleccionista.")
+
+
+
+#Punto 9
+
+# Bucle FOR para recorrer el catálogo (Lista de diccionarios)
+print("--- Listado de Catálogo ---")
+for pieza in catalog:
+    print(f"ID: {pieza['id']} | Nombre: {pieza['name']}")
+
+# Bucle WHILE para repetir un menú hasta que se decida salir
+opcion = ""
+while opcion != "4":
+    print("\n1. Ver piezas\n2. Ver disponibles\n3. Métricas\n4. Salir")
+    opcion = input("Seleccione una opción: ")
