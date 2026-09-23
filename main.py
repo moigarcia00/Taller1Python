@@ -1,6 +1,6 @@
 #PUNTO 1
 identificador = "COL-001"
-nombre = "Moneda Antigua
+nombre = "Moneda Antigua"
 precio = 1500.50
 cantidad = 3
 disponible = True
@@ -46,3 +46,22 @@ etiquetas = "retro,anime,edicion_limitada".split(",")
 # Concatenación e Interpolación
 concatenado = "Pieza: " + texto_limpio + " - Precio: " + str(precio)
 interpolado = f"Pieza: {texto_limpio} - Precio: ${precio:.2f}"
+
+
+
+
+
+# Punto 6
+pieza_objeto = {
+    "id": "COL-001",
+    "name": "Carta Charizard",
+    "price": 450.0,
+    "status": "disponible",
+    "description": "Carta usada en buen estado"
+}
+
+# Acceder a las propiedades de la estructura
+print(pieza_objeto["name"])
+
+# Colección principal (Lista de diccionarios)
+catalog = [pieza_objeto]
